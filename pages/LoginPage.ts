@@ -9,7 +9,6 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    // Preferimos atributos 'data-test' por estabilidad ante cambios dinámicos del DOM
     this.usernameInput = page.locator('[data-test="username"]');
     this.passwordInput = page.locator('[data-test="password"]');
     this.loginButton = page.locator('[data-test="login-button"]');
